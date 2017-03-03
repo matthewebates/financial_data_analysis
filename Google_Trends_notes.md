@@ -18,3 +18,4 @@ Google Trends does not include an API to access their data directly. There are s
 ### Related concepts
 While not directly related to our current efforts, the following sources describe concepts with similar themes.
 * Trump tweet stock-short-selling tool:  https://www.google.com/search?q=npr+stocks+and+tweets&ie=utf-8&oe=utf-8
+* Google Correlate is the inverse of google trends, where you can upload a time series and it will suggest search terms that demonstrated simiar trends: https://www.google.com/trends/correlate 
