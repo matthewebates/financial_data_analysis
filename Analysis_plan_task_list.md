@@ -45,6 +45,7 @@ The following types of tasks are expected to be needed:
 The folowing parameter & modeling choices will need to be made, based on either statistical fitting or playing with the various models and resuls to identify parameter settings that seem to respond well and yield interesting results:
 * choice of which companies/stocks to include.
 * choice of which market-related search keyworks to include.
+* choice of *m* days over which to request Google Trends data; frequency results will be normalized of this range.
 * choice of *n* days over which to calculate trailing returns (could also be an optimized result).
 - [X] choice to focus on stock losses insteaad of gains.
 * choice of magnitude of losses to filter out as normal fluctuations vs to retain and try to predict (e.g., above 1/2/3 sigma?).
