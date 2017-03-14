@@ -1,11 +1,14 @@
 ## Description and status of tasks in our planned analysis strategy
+
 <br>
+
 *A note about the meaning of the symbols used in the task list below:*
 * *denotes an item not yet undertaken.*
 - [ ] *denotes an item completed generically but not yet applied to the final data.*
 - [X] *denotes an item sufficiently completed.*
 
 <br>
+
 ### Initial input data
 The following types of input data will be required:
 * lists of company stock symbols and names (potentially including aliases).
@@ -13,6 +16,7 @@ The following types of input data will be required:
 
 
 <br>
+
 ### Intermediate derived data
 The following data are expected to be developed as part of the analysis process:
 * lists of many specific company+keywords queries to run through Google Trends.
@@ -25,6 +29,7 @@ The following data are expected to be developed as part of the analysis process:
 
 
 <br>
+
 ### Anticipated tasks
 The following types of tasks are expected to be needed:
 - [X] develop functions to algorithmically pull results from Google Trends and Yahoo Finance.
@@ -41,6 +46,7 @@ The following types of tasks are expected to be needed:
 
 
 <br>
+
 ### Parameter choices
 The folowing parameter & modeling choices will need to be made, based on either statistical fitting or playing with the various models and resuls to identify parameter settings that seem to respond well and yield interesting results:
 * choice of which companies/stocks to include.
@@ -55,6 +61,7 @@ The folowing parameter & modeling choices will need to be made, based on either 
 
 
 <br>
+
 ### Results and outputs
 * identification of optimal *n* days over which to calculate trailing returns (could also be a parameter choice).
 * identification of optimal lag(s) for correlating increase search frequency with later, corresponding stock price movement.
