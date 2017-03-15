@@ -35,7 +35,7 @@ The following types of tasks are expected to be needed:
 - [X] develop functions to algorithmically pull results from Google Trends and Yahoo Finance.
 * review the academic literature related to this phenominon -- through this we will develop the list of search keyworks believed to be potentially relevant for foreshadowing stock price moves (esp. losses).
 * combine the lists of company names/aliases/stock symbols with the lists of potential search keyworks -- through this we will develop a list of specific company+keywords queries to run through Google Trends.
-- [ ] use the pytrends third-party API to run each of these company+keywords queries through Google Trends -- this will result in time series of relative query frequency.
+- [X] use the pytrends third-party API to run each of these company+keywords queries through Google Trends -- this will result in time series of relative query frequency.
 - [ ] use our custom functions to pull data from Yahoo Finance for the list of stock symbols -- this will result in time series of adjusted closing prices.
 - [X] develop functions to calculte (lognormal) returns over the preceding *n* days -- this will result time series (*n* elements shorter than the original time series of closing prices) of stock returns.
 * develop functions that filter our low-amplitude, high-frequency losses as daily noise events, and keep only the less frequent, greater magnitude events that we are trying to predict -- this will result in binary time series of 1s for high magnitude losses and 0s elsewhere.
@@ -50,8 +50,9 @@ The following types of tasks are expected to be needed:
 ### Parameter choices
 The folowing parameter & modeling choices will need to be made, based on either statistical fitting or playing with the various models and resuls to identify parameter settings that seem to respond well and yield interesting results:
 * choice of which companies/stocks to include.
-* choice of which market-related search keyworks to include.
-* choice of *m* days over which to request Google Trends data; frequency results will be normalized of this range.
+- [X] choice of which company name-related search keyworks to include.
+- [X] choice of categories to pull trends data from.
+- [X] choice of *m* days over which to request Google Trends data; frequency results will be normalized of this range.
 * choice of *n* days over which to calculate trailing returns (could also be an optimized result).
 - [X] choice to focus on stock losses insteaad of gains.
 * choice of magnitude of losses to filter out as normal fluctuations vs to retain and try to predict (e.g., above 1/2/3 sigma?).
