@@ -1,4 +1,4 @@
-# financial_data_analysis
+# Financial Data Analysis
 
 This project is interested in exploring trends in stock market performance. We plan to web scrape current and historical stock price data from yahoo finance (or similar), code a few metrics for comparing stock performance over time (trailing returns over time periods, large magnitude gains and losses). We plan to combine these financial market indicators with one or more types of data representing external societal trends, and to explore correlations between those data and stock prices.
 
