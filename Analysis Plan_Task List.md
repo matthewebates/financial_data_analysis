@@ -49,7 +49,7 @@ The folowing parameter & modeling choices will need to be made, based on either 
 - [X] choice of which company name-related search keyworks to include.
 - [X] choice of categories to pull trends data from.
 - [X] choice of *m* days over which to request Google Trends data; frequency results will be normalized of this range.
-* choice of *n* days over which to calculate trailing returns (could also be an optimized result).
+- [X] choice of *n* days over which to calculate trailing returns (could also be an optimized result).
 - [X] choice to focus on stock losses insteaad of gains.
 - [X] choice of magnitude of losses to filter out as normal fluctuations vs to retain and try to predict (e.g., above 1/2/3 sigma?).
 - [X] choice of maximum time period over which to assess lags of different length between.
@@ -60,7 +60,6 @@ The folowing parameter & modeling choices will need to be made, based on either 
 
 ### Results and outputs
 * identification of optimal *n* days over which to calculate trailing returns (could also be a parameter choice).
-* identification of optimal lag(s) for correlating increase search frequency with later, corresponding stock price movement.
+* identification of optimal lag(s) for cross-correlating search frequency with stock price movement.
 * identification of optimal keywords for which to monitor for future potential stock price moves.
 * summarization of and plots showing degree of correlation between past search term frequency and stock price moves.
-* ...
