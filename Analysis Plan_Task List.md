@@ -3,44 +3,42 @@
 <br>
 
 *A note about the meaning of the symbols used in the task list below:*
-* *denotes an item not yet undertaken.*
-- [ ] *denotes an item completed generically but not yet applied to the final data.*
+- [ ] *denotes an item completed not yet completed or applied to the final data.*
 - [X] *denotes an item sufficiently completed.*
 
 <br>
 
 ### Initial input data
-The following types of input data will be required:
+The following input data form the basis for this analysis:
 - [X] lists of company stock symbols and names (potentially including aliases).
-- [X] lists of search terms believed to be potentially relevant for foreshadowing stock price moves (esp. losses).
+- [X] lists of search terms (or categories of terms) believed to be relevant for foreshadowing stock price moves (esp. losses).
 
 
 <br>
 
 ### Intermediate derived data
-The following data are expected to be developed as part of the analysis process:
+The following data developed during the analysis process:
 - [X] company, keywords, & category queries to run through Google Trends.
-- [X] time series of relative company+keywords search query frequency from Google Trends.
-- [X] vector of bins of serach query frequency at different (average) lags.
+- [X] time series of relative company+keywords search query frequency results from Google Trends.
 - [X] time series of stock closing prices from Yahoo Finance.
 - [X] time series of calculated stock returns over *n* days.
-- [X] binary time series of 1s for high magnitude losses and 0s elsewhere.
+- [X] binary time series of 1s for high magnitude losses and 0s elsewhere (to filter low-amplitude, high-frequency events).
 
 
 <br>
 
-### Anticipated tasks
-The following types of tasks are expected to be needed:
+### Analysis tasks
+The following types of tasks are involved in this analysis:
 - [X] develop functions to algorithmically pull results from Google Trends and Yahoo Finance.
-- [X] review the academic literature related to this phenominon -- through this we will develop the list of search keyworks believed to be potentially relevant for foreshadowing stock price moves (esp. losses).
-- [X] combine the lists of company names/aliases/stock symbols with the lists of potential search keyworks -- through this we will develop a list of specific company+keywords queries to run through Google Trends.
+- [X] review the academic and grey literature related to this phenominon -- this we will develop potential lists of search keyworks believed to be potentially relevant for foreshadowing stock price moves (esp. losses).
+- [X] combine the lists of company names/aliases/stock symbols with the lists of potential search keyworks -- this will support development of lists of specific company+keywords queries to run through Google Trends.
 - [X] use the pytrends third-party API to run each of these company+keywords queries through Google Trends -- this will result in time series of relative query frequency.
-- [X] use our custom functions to pull data from Yahoo Finance for the list of stock symbols -- this will result in time series of adjusted closing prices.
-- [X] develop functions to calculte (lognormal) returns over the preceding *n* days -- this will result time series (*n* elements shorter than the original time series of closing prices) of stock returns.
+- [X] use our custom functions to pull data from Yahoo Finance for the given stock symbols -- this will result in time series of adjusted closing prices.
+- [X] develop functions to calculte (lognormal) returns over the preceding *n* days -- this will result time series (that are *n* elements shorter than the original time series of closing prices) of stock returns.
 - [X] develop functions that filter our low-amplitude, high-frequency losses as daily noise events, and keep only the less frequent, greater magnitude events that we are trying to predict -- this will result in binary time series of 1s for high magnitude losses and 0s elsewhere.
 - [X] each daily return for a stock can now be associated with a vector of search term frequencies at various lags *h* days previously. 
-- [] create bins of lags and a use their average (or other basis function) to represent that lag.
-- [] find the highest correlation between search term frequency at past lags (or avg from bins of lags) for high magnitude stock losses.
+- [X] explore different bin and lag sizes and a use their average (or other basis function) for summarizing prior search intensity.
+- [X] find the highest correlation between search term frequency at past lags (or avg from bins of lags) for high magnitude stock losses.
 
 
 <br>
